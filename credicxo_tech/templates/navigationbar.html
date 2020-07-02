@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% block title %}Credicxo Tech - Home{% endblock %}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="{% static 'images/credicxo-logo.png' %}" sizes="50x50" type="image/png">
+  <meta name="description" content="Credicxo Techr is a website that uses API to search about Bank Details">
+  <meta name="author" content="Gulshan Baraik">
+  <meta name="keywords" content="Credicxo Tech">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/style.css' %} ">
+
+  <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#292b2c">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#292b2c">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#292b2c">
+
+
+  <style>
+     img {
+      pointer-events: none;
+    }
+  </style>
+
+
+</head>
+<body style="font-family:Roboto !important" id="body">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <span><img src="{% static 'images/credicxo-logo.png' %}" style="width:50px; height:50px;"
+                        id="logo"></span>
+  <strong><a class="navbar-brand" href="{% url 'home' %}" style="font-size:21px; margin-left: 3px;">Credicxo Tech</a></strong>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar" style="font-size: 18px; margin-top: 7px;">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'home' %}"><i class="fas fa-home"></i> Home</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br><br>
+
+{% block body %}
+
+{% endblock %}
+
+
+</body>
+
+</html>
