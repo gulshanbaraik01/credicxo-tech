@@ -24,7 +24,7 @@ Jinja2==2.9.5
 joblib==0.14.1
 jsonschema==3.2.0
 kiwisolver==1.2.0
-lxml==4.5.0
+lxml==4.9.1
 MarkupSafe==0.23
 mistune==0.8.4
 nbconvert==5.6.1
